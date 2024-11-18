@@ -24,7 +24,7 @@ document.getElementById('submission-form').addEventListener('submit', async (eve
 
   // POST to API Gateway
   try {
-      const response = await fetch('http://localhost:80/csr-request', {
+      const response = await fetch('http://localhost:180/csr-request', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
